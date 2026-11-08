@@ -11,29 +11,31 @@ PolicyPulse is an interactive research terminal that analyzes and simulates how 
 
 ## Screenshots
 
-| US macro view (FEDFUNDS vs 10Y) | UK macro view (BoE rate pre/post) |
+| United States: policy rate and yields | United States: reactions by sector |
 |---|---|
-| ![US macro](screenshots/policypulse-1.png) | ![UK macro](screenshots/policypulse-5.png) |
+| ![US overview](screenshots/policypulse-1.png) | ![US reactions](screenshots/policypulse-2.png) |
 
-![Monte Carlo and stress test](screenshots/policypulse-3.png)
+| Scenario analysis | United Kingdom: reactions by decision type |
+|---|---|
+| ![Scenario analysis](screenshots/policypulse-3.png) | ![UK reactions](screenshots/policypulse-5.png) |
 
 ---
 
 ## Overview
 The project studies how decisions by the **Federal Reserve (FOMC)** and the **Bank of England (BoE MPC)** affect equity markets and bond yields. It brings macroeconomic indicators, policy-text sentiment and market reactions into one analytical framework, organized as six tabs:
 
-1. **Macro**: policy rate, yields and macro indicators over time
-2. **Events**: event study with cumulative abnormal returns (CAR) around announcements
-3. **NLP**: sentiment features extracted from FOMC statements (2010 onward)
-4. **Diagnostics**: model fit and feature diagnostics
-5. **Scenario Sim**: Monte Carlo and stress-test lab driven by sliders (financial stress, inflation, labor market, policy rate, BoE rate shock)
-6. **3D Lab**: 3D visualizations of market reactions
+1. **Overview**: policy rates, yields and macro indicators over time
+2. **Announcement reactions**: announcement-day returns, distribution, and sector or decision-type breakdown
+3. **Statement language**: tone and topic emphasis of FOMC statements, and how tone relates to the market move
+4. **Model drivers**: which inputs the Random Forest relies on
+5. **Scenario analysis**: set inputs in the sidebar and compare the model-implied return with history
+6. **3D explorer**: relate any three variables
 
 ## Key Features
 - Event study framework (CAR and volatility around announcement windows)
 - NLP sentiment scoring of central bank statements
 - Random Forest model predicting market reaction
-- Stress-testing and scenario simulation
+- Scenario analysis with sidebar inputs
 - Interactive Streamlit dashboard with 2D and 3D Plotly charts
 
 ## Data Sources
