@@ -75,4 +75,3 @@ The app reads the four CSV files in this repo, so no API keys are needed.
 - **Devangi Agrahari**: MS in Finance, Quantitative Finance, University at Buffalo
 - **Bhanu Teja Dunna**: MS in Finance, Quantitative Finance & FinTech, University at Buffalo
 
-Original repository: https://github.com/Bhanu-Teja-Dunna/PolicyPulse
